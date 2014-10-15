@@ -1,0 +1,14 @@
+
+// VIEW FILE 
+
+extends layout
+
+block content
+	h1 The Motorcycle Diaries Journey
+	h3 Stops on the Journey
+
+	h2 Second Stop: #{locations.country}
+	h4 Description: #{locations.description}
+
+	a(href='/colombia')
+		button.next-page Next Page
