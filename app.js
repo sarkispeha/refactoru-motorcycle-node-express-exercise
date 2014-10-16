@@ -2,13 +2,13 @@
 // This file ties everything together
 
 var express = require('express'); // This allows you to use express
-var bodyParser = require('body-parser');
+// var bodyParser = require('body-parser');
 var indexController = require('./controllers/index.js');
 
 var app = express(); // Calling express so you can use it
 app.set('view engine', 'jade'); // Use Jade for your views
 app.set('views', __dirname + '/views'); 
-app.use(bodyParser.urlencoded({extended: false})); 
+// app.use(bodyParser.urlencoded({extended: false})); 
 
 // Routing For The Homepage
 app.get('/', indexController.index);
@@ -28,10 +28,15 @@ app.get('/venezuela', indexController.venezuela);
 // Routing for the USA Page
 app.get('/usa', indexController.usa);
 
+// Routing for the WTF Page
+app.get('/wtf/:name', indexController.wtf);
+
 
 var server = app.listen(9691, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
+
+
 
 /*
 

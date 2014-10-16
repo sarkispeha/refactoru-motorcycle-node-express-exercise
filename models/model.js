@@ -1,9 +1,13 @@
 
 // MODEL
 
-var locations = [
-	{
-		country: 'Chile',
+var locations = {
+
+	
+
+	chile:	{	
+
+		name: 'Chile',
 		description: 'Second stop on the Journey of Che'
 	},
 	{
@@ -22,7 +26,7 @@ var locations = [
 		country: 'USA',
 		description: 'Second stop on the Journey of Che'
 	}
-];
+};
 
 // Export the whole object
 module.exports = locations;

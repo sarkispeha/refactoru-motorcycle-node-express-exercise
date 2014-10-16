@@ -1,9 +1,8 @@
-
 // CONTROLLER FILE
 
 // Go out a directory (back to root directory)
 var locations = require('../models/model.js');
-// desserts.js is shared to index.js
+// models.js is shared to index.js
 
 
 // Object literal, one instance of index on it
@@ -42,6 +41,13 @@ var indexController = {
 			locations: locations[4]
 		});
 	},
+	wtf: function(req, res) {
+		var path = req.params.name;
+		res.render('wtf');
+		console.log(path);
+	},
+	
+
 };
 
 module.exports = indexController;
