@@ -3,28 +3,30 @@
 
 var locations = {
 
-	
-
 	chile:	{	
-
 		name: 'Chile',
-		description: 'Second stop on the Journey of Che'
+		description: 'Second stop on the Journey of Che',
+		next: 'peru'
 	},
-	{
-		country: 'Peru',
-		description: 'Third stop on the Journey of Che'
+	peru:	{
+		name: 'Peru',
+		description: 'Third stop on the Journey of Che',
+		next: 'colombia'
 	},
-	{
-		country: 'Colombia',
-		description: 'Fourth stop on the Journey of Che'
+	colombia:	{
+		name: 'Colombia',
+		description: 'Fourth stop on the Journey of Che',
+		next: 'venezuela'
 	},
-	{
-		country: 'Venezuela',
-		description: 'Fifth stop on the Journey of Che'
+	venezuela:	{
+		name: 'Venezuela',
+		description: 'Fifth stop on the Journey of Che',
+		next: 'usa'
 	},
-	{
-		country: 'USA',
-		description: 'Second stop on the Journey of Che'
+	usa:	{
+		name: 'USA',
+		description: 'Second stop on the Journey of Che',
+		next: 'chile'
 	}
 };
 

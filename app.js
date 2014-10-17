@@ -13,23 +13,26 @@ app.set('views', __dirname + '/views');
 // Routing For The Homepage
 app.get('/', indexController.index);
 
+//
+app.get('/places/:placename', indexController.places)
+
 // Routing for the Chile Page
-app.get('/chile', indexController.chile);
+// app.get('/chile', indexController.chile);
 
 // Routing for the Peru Page
-app.get('/peru', indexController.peru);
+// app.get('/peru', indexController.peru);
 
 // Routing for the Colombia Page
-app.get('/colombia', indexController.colombia);
+// app.get('/colombia', indexController.colombia);
 
 // Routing for the Venezuela Page
-app.get('/venezuela', indexController.venezuela);
+// app.get('/venezuela', indexController.venezuela);
 
 // Routing for the USA Page
-app.get('/usa', indexController.usa);
+// app.get('/usa', indexController.usa);
 
 // Routing for the WTF Page
-app.get('/wtf/:name', indexController.wtf);
+// app.get('/wtf/:name', indexController.wtf);
 
 
 var server = app.listen(9691, function() {

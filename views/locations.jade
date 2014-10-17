@@ -1,4 +1,3 @@
-
 //- VIEW FILE 
 
 extends layout
@@ -7,7 +6,8 @@ block content
 	h1 The Motorcycle Diaries Journey
 	h3 Stops on the Journey
 
-	h2 First Stop: Buenos Aires
+	h2 Second Stop: #{location.name}
+	h4 Description: #{location.description}
 
-	a(href='/places/chile')
+	a(href='/places/#{location.next}')
 		button.next-page Next Page
